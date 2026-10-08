@@ -1,0 +1,151 @@
+/* Centers the card on the page */
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* The white card */
+.quiz {
+  width: 100%;
+  max-width: 420px;
+  background-color: white;
+  padding: 35px 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.quiz h1 {
+  font-size: 28px;
+  margin: 10px 0;
+  color: #1f2937;
+}
+
+.quiz h2 {
+  font-size: 18px;
+  color: #6b7280;
+  margin: 0 0 10px;
+}
+
+.question {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 10px 0 20px;
+}
+
+.score {
+  font-size: 22px;
+  color: #374151;
+}
+
+/* Welcome screen */
+.welcome-icon {
+  font-size: 64px;
+}
+
+.welcome-sub {
+  font-size: 17px;
+  color: #4b5563;
+}
+
+.welcome-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: left;
+  display: inline-block;
+  color: #374151;
+}
+
+.welcome-list li {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Answer buttons */
+.quiz button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #f9fafb;
+  color: #1f2937;
+  border: 2px solid #d1d5db;
+  border-radius: 10px;
+}
+
+.quiz button:hover:not(:disabled) {
+  border-color: #3b82f6;
+  background-color: #eff6ff;
+}
+
+.quiz button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.quiz button.correct {
+  background-color: #2e9e4f;
+  border-color: #2e9e4f;
+  color: white;
+  opacity: 1;
+}
+
+.quiz button.wrong {
+  background-color: #d64545;
+  border-color: #d64545;
+  color: white;
+  opacity: 1;
+}
+
+/* Answer box below the choices */
+.result {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid #3b82f6;
+  background-color: rgba(59, 130, 246, 0.1);
+}
+
+.result p {
+  margin: 8px 0;
+  font-size: 18px;
+  color: #1f2937;
+}
+
+.result strong {
+  color: #2e9e4f;
+  font-size: 20px;
+}
+
+.quiz button.next {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+  color: white;
+}
+
+.quiz button.next:hover {
+  background-color: #2563eb;
+}
+
+/* Start / Try Again button */
+.quiz button.start {
+  background-color: #2e9e4f;
+  border-color: #2e9e4f;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.quiz button.start:hover {
+  background-color: #258041;
+}
